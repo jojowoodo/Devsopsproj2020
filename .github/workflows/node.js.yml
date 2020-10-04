@@ -18,9 +18,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
+    - name: Do something with a passing build
+      if: steps.wait-for-build.outputs.conclusion == 'success'
+    - name: Do something with a failing build
+      if: steps.wait-for-build.outputs.conclusion == 'failure'
+        
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
     - run: npm run build --if-present
     - run: npm test
