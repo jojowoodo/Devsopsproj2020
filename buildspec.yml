@@ -14,10 +14,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha main.js
+      - mocha /.github/workflows/main.js
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - HelloWorld.js
+    - /.github/workflows/main.js
