@@ -1,19 +1,26 @@
-  
+
 version: 0.2
-env:
-  variables:
-    CI: "true"
+
 phases:
   install:
     commands:
-      - yarn
+      - echo Installing Mocha...
+      - npm install -g mocha
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install unit.js
   build:
     commands:
-      - yarn test
-      - yarn build && aws s3 sync ./build s3://testing-arcada-devops
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+
+      - mocha main.js
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
-    files:
-        - '**/*'
-    discard-paths: yes
-    name: build-$(date +%Y-%m-%d)
-    base-directory: 'build'
+  files:
+
+    - main.js
