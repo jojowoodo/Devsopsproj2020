@@ -17,8 +17,8 @@ phases:
       
       - mocha main.js
 
-      - yarn test
-      - yarn build && aws s3 sync ./build s3://devsops2020proj
+   ##   - yarn test
+   ##   - yarn build && aws s3 sync ./build s3://devsops2020proj
 
 
   post_build:
@@ -29,5 +29,5 @@ artifacts:
 
     - main.js
 
-  name: build-$(date +%Y-%m-%d)
-  base-directory: 'build'
+  #name: build-$(date +%Y-%m-%d)
+  #base-directory: 'build'
