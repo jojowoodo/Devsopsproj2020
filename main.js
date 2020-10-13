@@ -3,10 +3,12 @@
 
 
 function displayS3Content(){
-
+  var el_down = document.getElementById("GFG_DOWN"); 
   let url = `https://a2y5u6gdaf.execute-api.eu-central-1.amazonaws.com/getS3/static`;
+
   fetch(url)
   .then(response => response.json())
+
   .then(data => document.getElementById("s3content").innerHTML =  JSON.stringify(data));
     
 }
@@ -14,4 +16,9 @@ function displayS3Content(){
 //en liten testfunktion
 function testFunction(){
   document.getElementById('testBox').innerHTML += "\nVad fint väder";
+
+  .then(data => el_down.innerHTML = JSON.stringify(data, undefined, 4));
+
+
+
 }
