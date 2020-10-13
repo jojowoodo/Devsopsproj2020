@@ -3,6 +3,7 @@ version: 0.2
 
 phases:
   install:
+    
     commands:
       #- echo Installing Mocha...
      # - npm install -g mocha
@@ -15,7 +16,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       
-      - mocha main.js
+     # - mocha main.js
 
    ##   - yarn test
    ##   - yarn build && aws s3 sync ./build s3://devsops2020proj
