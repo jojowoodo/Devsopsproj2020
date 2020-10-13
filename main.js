@@ -9,10 +9,10 @@ function displayS3Content(){
   fetch(url)
   .then(response => response.json())
 
-  .then(data => document.getElementById("s3content").innerHTML =  JSON.stringify(data));
+  .then(data => el_down.innerHTML =  JSON.stringify(data, undefined, 4));
     
 }
-
+/*
 //en liten testfunktion
 function testFunction(){
   document.getElementById('testBox').innerHTML += "\nVad fint väder";
@@ -22,3 +22,5 @@ function testFunction(){
 
 
 }
+
+*/
