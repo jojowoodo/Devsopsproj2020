@@ -8,10 +8,10 @@ function displayS3Content(){
   fetch(url)
   .then(response => response.json())
   .then(data => document.getElementById("s3content").innerHTML =  JSON.stringify(data));
+    
+}
 
-
-
-
-  
-      
+//en liten testfunktion
+function testFunction(){
+  document.getElementById('testBox').innerHTML += "\nVad fint väder";
 }
