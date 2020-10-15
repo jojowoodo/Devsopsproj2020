@@ -11,6 +11,7 @@ function displayS3Content(){
     
 }
 
+
 /*
 //en liten testfunktion
 function testFunction(){
