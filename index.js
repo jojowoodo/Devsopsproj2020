@@ -7,3 +7,4 @@ function calculate(x, y){
       calculate : calculate
   }
   //hello darkness my old friend
+}
