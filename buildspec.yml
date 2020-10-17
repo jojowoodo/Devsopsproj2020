@@ -30,6 +30,11 @@ artifacts:
   files:
 
     - main.js
-
+    - README.md
+    - buildspec.yml
+    - index.html
+    - packge.json
+    - package-lock.json
+    - style.css
   #name: build-$(date +%Y-%m-%d)
   #base-directory: 'build'
