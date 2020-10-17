@@ -7,6 +7,7 @@ phases:
     commands:
       #- echo Installing Mocha...
      # - npm install -g mocha
+
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -16,15 +17,15 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       
-     # - mocha main.js
+    # - mocha main.js
 
-   ##   - yarn test
-   ##   - yarn build && aws s3 sync ./build s3://devsops2020proj
-
+    ##   - yarn test
+    ##   - yarn build && aws s3 sync ./build s3://devsops2020proj
 
   post_build:
     commands:
       - echo Build completed on `date`
+      
 artifacts:
   files:
 
