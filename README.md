@@ -28,3 +28,4 @@ Då vi började på del 2 gjorde vi först en S3 Bucket som vi senare kopplade t
 Unit Testing:
 Vi har en unit testing som körs på en simpel javaScript funktion. Funktionen utför en multiplikation av hårdkodade tal, och testingen jämför det faktiska resultatet med det förväntade resultatet. Unit testingen använder sig av Mocha-biblioteket och Chai. 
 Unit testingen som den är påverkar inte projektet i sig. Eftersom vi inte kodat i Reacy, utan i plain JavaScript, verkar det finnas begränsat med möjligheter för unit testing, åtminstone enligt de efterforskningar vi gjort. Vi ville ändå prova på unit testing, så resultatet blev den här korta testen, så vi åtminstone fick en inblick i hur unit testing är uppbyggt och fungerar.
+Funktionen som testas finns i index.js. Unit testing koden finns i index.test.js. Unit testingen körs i konsolen med kommandot npm test.
