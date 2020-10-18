@@ -29,6 +29,8 @@ Del 3. Skapar först en Rest API med API Gateway. Jag kallar min API "MyS3Api". 
 Method. Integration Type är AWS Service och Servicen är S3. HTTP method är GET och jag använder path override så att sidan får en logisk path till s3 bucket. I exection role sätter jag en roll som har
 rättigheter för API Gateway. Sedan deployar jag Apin och testar att den fungerar i browsern.
 Nästa steg är att i koden fetcha filen med apin. Jag använder javascript fetch med URlen jag just skapat i API Gateway. Datan jag fetchar sätter jag i en div resurs efter att jag har tryckt på en knapp för att köra functionen.
+
+
 Del 4.
 Unit Testing:
 Vi har en unit testing som körs på en simpel javaScript funktion. Funktionen utför en multiplikation av hårdkodade tal, och testingen jämför det faktiska resultatet med det förväntade resultatet. Unit testingen använder sig av Mocha-biblioteket och Chai. 
