@@ -24,3 +24,7 @@ request så buildar kollar den om projektet hade en succcessful build före den 
 Del 2 av projektet fungerar riktigt bra fast vi först hade lite problem med buildpec.yml filen och hur vi skulle få appen att deploya.
 Vår pipeline bygger appen och kopierar allt innehåll till en S3 Bucket (vi valde S3 istället för EC2 för vi förstod oss bättre på det).  Vår S3 Bucket och appen är publika.
 Då vi började på del 2 gjorde vi först en S3 Bucket som vi senare kopplade till vår pipeline, pipelinen i sin tur är kopplad till GitHub varifrån den får sin source. Appen byggs med hjälp av AWS CodeBuild och som sista steg deployas alla filer och appen till vår S3 Bucket.
+
+Unit Testing:
+Vi har en unit testing som körs på en simpel javaScript funktion. Funktionen utför en multiplikation av hårdkodade tal, och testingen jämför det faktiska resultatet med det förväntade resultatet. Unit testingen använder sig av Mocha-biblioteket och Chai. 
+Unit testingen som den är påverkar inte projektet i sig. Eftersom vi inte kodat i Reacy, utan i plain JavaScript, verkar det finnas begränsat med möjligheter för unit testing, åtminstone enligt de efterforskningar vi gjort. Vi ville ändå prova på unit testing, så resultatet blev den här korta testen, så vi åtminstone fick en inblick i hur unit testing är uppbyggt och fungerar.
