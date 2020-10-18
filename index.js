@@ -6,5 +6,5 @@ function calculate(x, y){
   module.exports = {
       calculate : calculate
   }
-//gekk´´
+//g
   //hello darkness my old friend
